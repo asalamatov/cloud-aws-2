@@ -1,11 +1,38 @@
-<form method="POST" action="/register">
-    Username: <input type="text" name="username"><br>
-    Password: <input type="password" name="password"><br>
-    First Name: <input type="text" name="firstname"><br>
-    Last Name: <input type="text" name="lastname"><br>
-    Email: <input type="text" name="email"><br>
-    <input type="submit" value="Register">
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 500px;
+            margin-top: 50px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
 
-~                                                                                                                                                                                                    
-~           	
+<div class="container text-center">
+    <h2 class="mb-4">User Profile</h2>
+    <p><strong>Username:</strong> {{ user[1] }}</p>
+    <p><strong>First Name:</strong> {{ user[3] }}</p>
+    <p><strong>Last Name:</strong> {{ user[4] }}</p>
+    <p><strong>Email:</strong> {{ user[5] }}</p>
+
+    <a href="/" class="btn btn-secondary mt-3">Go Back</a>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
